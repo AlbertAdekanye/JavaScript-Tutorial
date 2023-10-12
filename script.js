@@ -66,3 +66,84 @@ console.log(newArr.length);
 
 // delete - deletes the element from the array
 delete newArr[5];
+
+// for loop
+for (i = 0; i < newArr.length; i++) {
+    console.log(newArr[i]);
+}
+
+// for in loop
+for (i in newArr) {
+    console.log(newArr[i]);
+}
+
+// for of loop
+for (i of newArr) {
+    console.log(i);
+}
+
+// forEach loop
+newArr.forEach(function (i) {
+    console.log(i);
+});
+
+// while loop
+i = 1;
+while (i < newArr.length) {
+    console.log(newArr[i]);
+    i++;
+}
+
+// do while loop
+i = 1;
+do {
+    console.log(newArr[i]);
+    i++;
+} while (i < newArr.length);
+
+// Path: script.js
+// objects
+// it is basically a collection of data items of different types under one name
+
+myObj = {
+  "name": "Albert",
+  "age": 21,
+  "isMale": true,
+  "hobbies": ["reading", "gaming", "coding", ""],
+  "school": "Federal University Oye-Ekiti",
+  "department": "Computer Science",
+  "level": 300,
+
+  "friends": [
+    "Pearl",
+    "Jae",
+    "Vickie",
+    "",
+  ],
+  "address": {
+    "street": "phase two road",
+    "city": "Oye",
+    "state": "Ekiti",
+    "country": "Nigeria"
+  }
+}
+
+// accessing object properties
+console.log(myObj.address.city);
+console.log(myObj["address"]["city"]);
+console.log(myObj.level);
+
+// changing object properties
+myObj.level = 400;
+console.log(myObj.level);
+
+// adding object properties
+myObj["isMarried"] = false;
+console.log(myObj.isMarried);
+
+// deleting object properties
+delete myObj.isMarried;
+console.log(myObj.isMarried);
+
+// object methods
+// Object.keys() - returns the keys of the object
