@@ -147,3 +147,110 @@ console.log(myObj.isMarried);
 
 // object methods
 // Object.keys() - returns the keys of the object
+
+console.log(Object.keys(myObj));
+console.log(Object.values(myObj));
+
+// Object.values() - returns the values of the object
+
+// Object.entries() - returns the keys and values of the object
+
+console.log(Object.entries(myObj));
+
+// Object.assign() - copies the object
+
+myObj2 = Object.assign({}, myObj);
+console.log(myObj2);
+
+// Object.freeze() - freezes the object
+
+Object.freeze(myObj);
+myObj.name = "Albert";
+console.log(myObj.name);
+
+// Object.seal() - seals the object
+
+// Object.seal(myObj);
+// myObj.name = "Albert";
+// console.log(myObj.name);
+
+// Object.isFrozen() - checks if the object is frozen
+
+console.log(Object.isFrozen(myObj));
+
+// Object.isSealed() - checks if the object is sealed
+
+Object.isSealed(myObj);
+console.log(Object.isSealed(myObj));
+
+// Object.isExtensible() - checks if the object is extensible
+
+console.log(Object.isExtensible(myObj));
+
+// Object.is() - checks if two objects are equal
+
+console.log(Object.is(myObj, myObj2));
+
+// Object.getOwnPropertyNames() - returns the properties of the object
+
+console.log(Object.getOwnPropertyNames(myObj));
+
+// Object.getPrototypeOf() - returns the prototype of the object
+
+console.log(Object.getPrototypeOf(myObj));
+
+// Object.setPrototypeOf() - sets the prototype of the object
+
+console.log(Object.setPrototypeOf(myObj, myObj2));
+
+// Object.hasOwnProperty() - checks if the object has the property
+
+console.log(myObj.hasOwnProperty("name"));
+console.log(myObj.hasOwnProperty("isMarried"));
+
+// Object.isPrototypeOf() - checks if the object is the prototype of another object
+
+console.log(Object.isPrototypeOf(myObj));
+console.log(Object.isPrototypeOf(myObj2));
+
+// Object.toString() - converts the object into a string
+
+console.log(myObj.toString());
+
+// Object.toLocaleString() - converts the object into a local string
+
+console.log(myObj.toLocaleString());
+
+// Object.valueOf() - returns the primitive value of the object
+
+console.log(myObj.valueOf());
+
+// Object.defineProperty() - defines a new property for the object
+
+Object.defineProperty(myObj, "isMarried", { value: true });
+
+
+// Object.defineProperties() - defines new properties for the object
+
+Object.defineProperties(myObj, {
+  "isMarried": { value: false },
+  "isEmployed": { value: false }
+});
+
+if (myObj.isMarried) {
+  console.log("I am married");
+} else {
+  console.log("I am not married");
+}
+
+// Object.getOwnPropertyDescriptor() - returns the property descriptor of the object
+
+console.log(Object.getOwnPropertyDescriptor(myObj, "isMarried"));
+
+// Object.getOwnPropertyDescriptors() - returns the property descriptors of the object
+
+console.log(Object.getOwnPropertyDescriptors(myObj));
+
+// Object.preventExtensions() - prevents the object from being extended
+
+Object.preventExtensions(myObj);
