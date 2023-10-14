@@ -123,4 +123,113 @@ while (i < 10){
 }
 
 // javascript do while loop used when the number of iterations is unknown
+// do {
+    // conditional statement or code;
+// } while (condition);
 
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+
+// javascript switch statement used when there are multiple conditions
+
+var day = 2;
+switch (day){
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("another day");
+}
+
+var daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+var bestDay = 3, worstDay = 6;
+switch (bestDay || worstDay){
+  case 1:
+    console.log(daysOfTheWeek[0]);
+    break;
+  case 2:
+    console.log(daysOfTheWeek[1]);
+    break;
+  case 3:
+    console.log(daysOfTheWeek[2]);
+    break;
+  case 4:
+    console.log(daysOfTheWeek[3]);
+    break;
+  case 5:
+    console.log(daysOfTheWeek[4]);
+    break;
+  case 6:
+    console.log(daysOfTheWeek[5]);
+    break;
+  case 7:
+    console.log(daysOfTheWeek[6]);
+    break;
+  default:
+    console.log("another day");
+}
+
+var monthsOfTheYear = {
+  "January": 1,
+  "February": 2,
+  "March": 3,
+  "April": 4,
+  "May": 5,
+  "June": 6,
+  "July": 7,
+  "August": 8,
+  "September": 9,
+  "October": 10,
+  "November": 11,
+  "December": 12
+}
+var birthMonth = "March";
+switch (birthMonth){
+  case "January":
+    console.log(monthsOfTheYear.January);
+    break;
+  case "February":
+    console.log(monthsOfTheYear.February);
+    break;
+  case "March":
+    console.log(monthsOfTheYear.March);
+    break;
+  case "April":
+    console.log(monthsOfTheYear.April);
+    break;
+  case "May":
+    console.log(monthsOfTheYear.May);
+    break;
+  case "June":
+    console.log(monthsOfTheYear.June);
+    break;
+  case "July":
+    console.log(monthsOfTheYear.July);
+    break;
+  case "August":
+    console.log(monthsOfTheYear.August);
+    break;
+  case "September":
+    console.log(monthsOfTheYear.September);
+    break;
+  case "October":
+    console.log(monthsOfTheYear.October);
+    break;
+  case "November":
+    console.log(monthsOfTheYear.November);
+    break;
+  case "December":
+    console.log(monthsOfTheYear.December);
+    break;
+  default:
+    console.log("another month");
+}
