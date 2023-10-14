@@ -49,7 +49,7 @@ while (age <= 18){
 function sayHi(name, age){
   if(name != "Albert" || age != 21 && name != "John" || age != 20 && name != "Mike" || age != 18){
     console.log("");
-    
+
   }else if(name == "Albert" || age == 21 && name != "John" || age != 20 && name != "Mike" || age != 18){
     console.log("hey Albert");
    
@@ -69,11 +69,46 @@ function sayHi(name, age){
 // sayHi("Mike", 18);
 sayHi("love");
 
+// return statement
+
+function cube(num){
+  return num * num * num;
+}
+var cubeNum = cube(3);
+console.log(cubeNum);
+
+// javascript objects - a collection of data items of different types under one name
+
+var myObj = {
+  "name": "Albert",
+  "age": 21,
+  "isMale": true,
+  "hobbies": ["reading", "coding", "gaming"],
+  "address": {
+    "street": "123 main st",
+    "city": "New York",
+    "state": "NY"
+  }
+}
+console.log(myObj.name);
 
 
 
-//   else{
-//     console.log("you are Albert or John or Mike");
-//   }
-//   console.log("hello " + name + " you are " + age + " years old");
+// javascript for loop used when the number of iterations is known
+// for (init; condition; increment){
+    // conditional statement or code;
+// }
 
+
+for (var i = 1; i < 100; i++){
+  if (i % 2 == 0){
+    console.log(i);
+  }
+}
+
+var myArr = ["Albert", "John", "Mike", "Mary"];
+for (var i = 0; i < myArr.length; i++){
+  console.log(myArr[i]);
+}
+
+// javascript while loop used when the number of iterations is unknown
