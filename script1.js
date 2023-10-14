@@ -24,14 +24,14 @@
 // conditional statements
 
 var age = 21;
-var isMale = false;
-var isTall = false;
-var isStudent = false;
+var isMale = true;
+var isTall = true;
+var isStudent = true;
 var isAdult = false;
 age = 16;
 
-while (age < 18){
-    console.log("you are not an adult");
+while (age <= 18){
+    console.log("you are a teenager");
     age++;
 }if (isMale && isTall && isStudent && isAdult){
   console.log("you are a student and a tall male")
