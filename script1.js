@@ -112,3 +112,15 @@ for (var i = 0; i < myArr.length; i++){
 }
 
 // javascript while loop used when the number of iterations is unknown
+// while (condition){
+    // conditional statement or code;
+// }
+
+var i = 0;
+while (i < 10){
+  console.log(i);
+  i++;
+}
+
+// javascript do while loop used when the number of iterations is unknown
+
