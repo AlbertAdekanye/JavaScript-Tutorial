@@ -42,3 +42,38 @@ while (age <= 18){
 }else{
   console.log("your data isn't complete")
 }
+
+
+// functions - a block of code designed to perform a particular task
+
+function sayHi(name, age){
+  if(name != "Albert" || age != 21 && name != "John" || age != 20 && name != "Mike" || age != 18){
+    console.log("");
+    
+  }else if(name == "Albert" || age == 21 && name != "John" || age != 20 && name != "Mike" || age != 18){
+    console.log("hey Albert");
+   
+  }else if(name != "Albert" || age != 21 && name == "John" || age == 20 && name != "Mike" || age != 18){
+    console.log("hey John");
+   
+  }else if(name != "Albert" || age != 21 && name != "John" || age != 20 && name == "Mike" || age == 18){
+    console.log("hey Mike");
+  
+  }else if(name == "" || age == "" || name == "" && age == ""){
+    console.log("you didn't enter your name or age");
+  }
+  // console.log("hello " + name + " you are " + age + " years old");
+}
+// sayHi("Albert", 21);
+// sayHi("John", 20);
+// sayHi("Mike", 18);
+sayHi("love");
+
+
+
+
+//   else{
+//     console.log("you are Albert or John or Mike");
+//   }
+//   console.log("hello " + name + " you are " + age + " years old");
+
