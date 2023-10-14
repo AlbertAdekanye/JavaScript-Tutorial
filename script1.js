@@ -233,3 +233,24 @@ switch (birthMonth){
   default:
     console.log("another month");
 }
+
+// javascript events - an action that occurs as a result of the user or another source
+// onclick event
+
+function sayHello(){
+  alert("hello");
+}
+
+// javascript iteration statements - statements that repeat a block of code until a condition is met
+// for loop, while, do while, for in
+
+// loop control statements - statements that control the execution of a loop
+
+var i;
+for (i = 0; i <= 10; i++) {
+  if (i == 5){
+    break;
+  }
+  console.log(i);
+}
+
