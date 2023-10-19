@@ -312,3 +312,68 @@ if (gpa >= 4.5){
 }else{
   console.log("fail");
 }
+
+// javascript operators - used to perform operations on variables and values
+// assignment operators, arithmetic operators, comparison operators, logical operators, bitwise operators
+
+// assignment operators - assigns a value to a variable
+// =, +=, -=, *=, /=, %=
+var x = 10;
+x += 5;
+console.log(x);
+
+// arithmetic operators - used to perform arithmetic operations
+// +, -, *, /, %, ++, --
+var x = 10;
+var y = 5;
+console.log(x + y);
+
+// basic calculator
+var num1 = 10;
+var num2 = 5;
+var sum = num1 + num2;
+var diff = num1 - num2;
+var prod = num1 * num2;
+var quot = num1 / num2;
+var rem = num1 % num2;
+console.log(sum);
+console.log(diff);
+console.log(prod);
+console.log(quot);
+console.log(rem);
+
+// comparison operators - used to compare two values
+// ==, ===, !=, !==, >, <, >=, <=
+var x = 10;
+var y = 5;
+console.log(x == y);
+console.log(x === y);
+console.log(x != y);
+console.log(x !== y);
+console.log(x > y);
+console.log(x < y);
+console.log(x >= y);
+console.log(x <= y);
+
+
+// logical operators - used to determine the logic between variables or values
+// &&, ||, !
+var x = 10;
+var y = 5;
+console.log(x > 5 && y < 10);
+console.log(x > 5 || y < 10);
+console.log(!(x > 5 && y < 10));
+
+
+// error handling - used to handle errors in javascript
+// try, catch, finally
+
+try {
+  alert("hello");
+  alert(x);
+  alert("world");
+} catch (err) {
+  console.log(err);
+} finally {
+  console.log("finally");
+}
