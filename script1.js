@@ -258,15 +258,16 @@ for (i = 0; i <= 10; i++) {
 
 var grade = 80;
 var cgpa = 4.5;
-if (grade >= 80){
+if (grade >= 80 && cgpa >= 4.5){
   console.log("A");
-}else if (grade >= 70){
+}else if (grade >= 70 && cgpa >= 4.0){
   console.log("B");
-}else if (grade >= 60){
+}else if (grade >= 60 && cgpa >= 3.5){
   console.log("C");
-}else if (grade >= 50){
+}else if (grade >= 50 && cgpa >= 3.0){
   console.log("D");
+}else if (grade >= 40 && cgpa >= 2.5){
+  console.log("E");
 }else{
   console.log("F");
 }
-console.log(grade);
