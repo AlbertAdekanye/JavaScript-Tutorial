@@ -271,3 +271,44 @@ if (grade >= 80 && cgpa >= 4.5){
 }else{
   console.log("F");
 }
+
+// switch statement
+
+var cgpa = 5.0;
+switch (cgpa){
+  case 5.0:
+    console.log("first class");
+    break;
+  
+  case 4.5:
+    console.log("second class upper");
+    break;
+
+  case 4.0:
+    console.log("second class lower");
+    break;
+
+  case 3.5:
+    console.log("third class");
+    break;
+  
+  case 3.0:
+    console.log("pass");
+    break;
+
+  default:
+    console.log("fail");
+}
+
+var gpa = 1.5;
+if (gpa >= 4.5){
+  console.log("first class");
+}else if (gpa >= 3.5){
+  console.log("second class upper");
+}else if (gpa >= 3.0 && gpa < 3.5){
+  console.log("second class lower");
+}else if (gpa >= 2.5 && gpa < 3.0){
+  console.log("third class");
+}else{
+  console.log("fail");
+}
