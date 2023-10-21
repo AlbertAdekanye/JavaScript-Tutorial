@@ -511,3 +511,65 @@ function sum(arr, n){
 console.log(sum([1], 0));
 console.log(sum([2, 3, 4], 1));
 console.log(sum([2, 3, 4, 5], 3));
+
+// Profile Lookup
+function lookUpProfile(name, prop){
+  for (let i = 0; i < contacts.length; i++){
+    if (contacts[i].firstName === name){
+      return contacts[i][prop] || "No such property";
+    }
+  }
+  return "No such contact";
+}
+const data = lookUpProfile("Akira", "likes");
+console.log(data);
+
+// Generate Random Fractions with JavaScript
+function randomFraction() {
+  let result = 0;
+  // Math.random() can generate 0. We don't want to     return a 0,
+  // so keep generating random numbers until we get one     that isn't 0
+  while (result === 0) {
+    result = Math.random();
+  }
+
+  return result;
+}
+
+// Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}
+console.log(randomWholeNum());
+
+// Generate Random Whole Numbers within a Range
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+console.log(randomRange(5, 15));
+
+// Use the parseInt Function
+function convertToInteger(str) {
+  return parseInt(str);
+}
+console.log(convertToInteger("56"));
+
+// Use the parseInt Function with a Radix
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+console.log(convertToInteger("10011"));
+
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a === b ? true : false;
+}
+console.log(checkEqual(1, 2));
+
+// Use Multiple Conditional (Ternary) Operators
+function checkSign(num){
+  return (num > 0) ?  "positive"
+  : (num < 0) ? "negative"
+  : "zero";
+}
+console.log(checkSign(10));
