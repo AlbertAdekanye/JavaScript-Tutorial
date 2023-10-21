@@ -411,7 +411,59 @@ console.log(myArray);
 
 // Iterate with JavaScript For Loops
 var myArray = [];
-for (var i = 1; i <= 5; i++){
+for (var i = 0; i < 5; i++){
   myArray.push(i);
 }
 console.log(myArray);
+
+// 5 through 0
+const myArray = [];
+for (let i = 5; i >= 0; i--){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// 1 through 5
+const myArray = [];
+for (i = 1; i <= 5; i++){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// Iterate even Numbers With a For Loop
+const myArray = [];
+for (let i = 0; i <= 10; i += 2){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// Push the odd numbers from 1 through 9 
+const myArray = [];
+for (let i = 1; i <= 9; i += 2){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// Count Backwards With a For Loop
+const myArray = [];
+for (let i = 10; i > 0; i -= 2){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// Push the odd numbers from 9 through 1 
+const myArray = [];
+for (let i = 9; i > 0; i -= 2){
+  myArray.push(i);
+}
+console.log(myArray);
+
+// Iterate Through an Array with a For Loop
+const myArray = [2, 3, 4, 5, 6];
+let total = 0;
+for (let i = 0; i < myArray.length; i++){
+  total += myArray[i];
+}
+console.log(total);
+
+// nesting for loops
