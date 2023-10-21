@@ -377,3 +377,41 @@ try {
 } finally {
   console.log("finally");
 }
+
+
+function updateRecords(records, id, props, value){
+  if (value === ""){
+    delete records[id][props];
+  }else if (props === "tracks"){
+    records[id][props] = records[id][props] || [];
+    records[id][props].push(value);
+  }else{
+    records[id][props] = value;
+  }
+  return records;
+}
+
+// Iterate with JavaScript While Loops
+var myArray = [];
+var i = 0;
+while(i < 5){
+  myArray.push(i);
+  i++;
+}
+console.log(myArray);
+
+const myArray = [];
+let i = 5;
+while(i >= 0){
+  myArray.push(i);
+  i--;
+}
+console.log(myArray);
+
+
+// Iterate with JavaScript For Loops
+var myArray = [];
+for (var i = 1; i <= 5; i++){
+  myArray.push(i);
+}
+console.log(myArray);
